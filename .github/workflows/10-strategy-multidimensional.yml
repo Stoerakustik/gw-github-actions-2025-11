@@ -11,5 +11,5 @@ jobs:
         steps:
           - run: echo "Hallo World! $MYPROPERTY1 $MYPROPERTY2"
             env:
-              MYPROPERTY1: ${{matrix.myproperty}}
-              MYPROPERTY2: ${{matrix.myproperty}}
+              MYPROPERTY1: ${{matrix.myproperty1}}
+              MYPROPERTY2: ${{matrix.myproperty2}}
