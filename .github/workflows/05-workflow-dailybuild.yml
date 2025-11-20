@@ -1,0 +1,9 @@
+name: 05-dailybuild
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hallo World!"
