@@ -1,0 +1,11 @@
+name: 07-first-action
+on:
+  push:
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+
