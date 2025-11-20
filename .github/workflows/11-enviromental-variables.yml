@@ -1,6 +1,7 @@
 name: 11-enviromental-variables
 on:
   push:
+  workflow_dispatch:
 env:
    MY_VAR1: my_value_1
    MY_VAR2: my_value_2
