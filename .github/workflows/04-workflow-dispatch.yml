@@ -19,4 +19,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        - run: echo $"Build run manuell {{inputs.property1}}"
+        - run: echo $"Build run manuell $PROPERTY1 $PROPERTY1"
+          env: 
+            PROPERTY1: ${{ inputs.property1 }}
+            PROPERTY2: ${{ inputs.property2 }}
