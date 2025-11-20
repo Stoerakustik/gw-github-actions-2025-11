@@ -1,0 +1,11 @@
+name: 02-hallo-world-multiline
+on:
+  push:
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hallo World! 1"
+          echo "Hallo World! 2"
+          echo "Hallo World! 3"
