@@ -1,0 +1,8 @@
+name: 08-runs-on-windows
+on:
+  push:
+jobs:
+  greeting:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Hallo World!"
