@@ -1,0 +1,15 @@
+name: 10-strategy-multidimensional
+on:
+  push:
+jobs:
+    greeting:
+        strategy:
+            matrix:
+                myproperty1: ['a','b','c']  
+                myproperty2: ['1','2','3']   
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Hallo World! $MYPROPERTY1 $MYPROPERTY2"
+            env:
+              MYPROPERTY1: ${{matrix.myproperty}}
+              MYPROPERTY2: ${{matrix.myproperty}}
