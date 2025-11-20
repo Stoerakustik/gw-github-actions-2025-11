@@ -6,3 +6,4 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: echo "Hallo World!"
+        shell: pwsh
