@@ -42,7 +42,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ github.actor }}/${{ env.IMAGE_NAME }}
           tags: |
             type=sha
-            type=raw,value=v1.0.0
+            type=raw,value=v1.0.${{github.run_number}}
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
