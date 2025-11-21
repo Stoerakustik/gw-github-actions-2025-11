@@ -1,4 +1,4 @@
-name: 17-build-oci
+name: 18-build-oci-multi-image
 on:
   push:
   workflow_dispatch:
